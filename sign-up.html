@@ -6,21 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link css  -->
     <link rel="stylesheet" href="sign-up.css">
 
-
-    <!-- JavaScript  -->
     <script src="signup.js"></script>
 
-
-    <!-- fonts  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Sign up with us</title>
 </head>
@@ -31,29 +26,26 @@
         <div class="flex-r login-wrapper">
             <div class="login-text">
                 <div class="logo">
-                    <span><img src="img\Signuplogo.gif" width="80px" height="80px"></i></span>
+                    <span><img src="img/Signuplogo.gif" width="80px" height="80px"></i></span>
                     <span></span>
                 </div>
                 
                 <h1>Sign Up</h1>
                 <p>It's not long before you embark on this journey! </p>
 
-                <form action="process-signup.php" method="post" id="signup" novalidate>
-
-
-                <form class="flex-c">
+                <form action="process-signup.php" method="post" novalidate>
                     <div class="input-box">
                         <span class="label">Username</span>
-                        <div class=" flex-r input">
-                            <input type="text" placeholder="Username" id="name" name="name">
+                        <div class="flex-r input">
+                            <input type="text" placeholder="Username" name="name">
                             <i class="fa fa-user-circle" aria-hidden="true"></i>
                         </div>
                     </div>
 
                     <div class="input-box">
                         <span class="label">E-mail</span>
-                        <div class=" flex-r input">
-                            <input type="text" placeholder="E-mail" id="email" name="email">
+                        <div class="flex-r input">
+                            <input type="text" placeholder="E-mail" name="email">
                             <i class="fas fa-at"></i>
                         </div>
                     </div>
@@ -61,7 +53,7 @@
                     <div class="input-box">
                         <span class="label">Password</span>
                         <div class="flex-r input">
-                            <input type="password" placeholder="Password" id="password" name="password">
+                            <input type="password" placeholder="Password" name="password" id="password">
                             <i class="fas fa-lock" onclick="togglePasswordVisibility()" id="toggleIcon"></i>
                         </div>
                     </div>
@@ -69,7 +61,7 @@
                     <div class="input-box">
                         <span class="label">Confirm Password</span>
                         <div class="flex-r input">
-                            <input type="password" placeholder="Confirm Password" id="password_confirmation" name="password_confirmation">
+                            <input type="password" placeholder="Confirm Password" name="password_confirmation">
                             <i class="fas fa-lock"></i>
                         </div>
 
@@ -78,7 +70,6 @@
                             <span>Already Have an Account?</span>
                             <a href="loginpage.php">Sign In</a>
                         </span>
-
                     </div>
                 </form>
 
